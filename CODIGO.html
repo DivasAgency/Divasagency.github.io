@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redireccionando...</title>
+    <script>
+        function redirectRandom() {
+            // Lista de URLs a las que puede redirigir
+            var urls = [
+                "https://wa.me/573225910869", // Reemplaza con tu primer enlace
+                "https://wa.me/573181711127"  // Reemplaza con tu segundo enlace
+            ];
+
+            // Elige un enlace al azar
+            var randomIndex = Math.floor(Math.random() * urls.length);
+            var selectedUrl = urls[randomIndex];
+
+            // Redirige al enlace seleccionado
+            window.location.href = selectedUrl;
+        }
+    </script>
+</head>
+<body onload="redirectRandom()">
+    <p></p>
+</body>
+</html>
